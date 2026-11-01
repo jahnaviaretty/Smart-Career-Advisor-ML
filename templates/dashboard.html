@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Advisor Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Smart Career Advisor</h1>
+
+    <h2>Welcome, {{ session['user_name'] }}!</h2>
+
+    <a href="/">New Career Prediction</a>
+    <a href="/logout">Logout</a>
+
+    <hr>
+
+    <h2>Your Dashboard</h2>
+
+    <h3>Total Career Predictions: {{ total_predictions }}</h3>
+
+    <h2>Your Prediction History</h2>
+
+    {% if history %}
+
+    <table>
+        <tr>
+            <th>Recommended Career</th>
+            <th>Date and Time</th>
+        </tr>
+
+        {% for item in history %}
+        <tr>
+            <td>{{ item['career'] }}</td>
+            <td>{{ item['created_at'] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    {% else %}
+
+    <p>You have not made any predictions yet.</p>
+
+    {% endif %}
+
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Smart Career Advisor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Smart Career Advisor</h1>
+
+    <h2>Welcome Back!</h2>
+
+    <p>Login to access your personalized career recommendations.</p>
+
+    {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endwith %}
+
+    <form method="POST" action="/login">
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <p>Don't have an account?</p>
+
+    <a href="/register">Create New Account</a>
+
+</body>
+</html>
+

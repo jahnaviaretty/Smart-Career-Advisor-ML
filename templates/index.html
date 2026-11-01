@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Career Advisor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Smart Career Advisor</h1>
+
+    <h2>Welcome, {{ session['user_name'] }}!</h2>
+
+    <a href="/dashboard">My Dashboard</a>
+    <a href="/logout">Logout</a>
+
+    <hr>
+
+    <h2>Discover Your Career Path</h2>
+
+    <p>Enter your skills and academic details to receive your top 3 career recommendations.</p>
+
+    <form action="/predict" method="POST">
+
+        <label>GPA (0-10):</label><br>
+        <input type="number" name="GPA" min="0" max="10" step="0.01" required>
+        <br><br>
+
+        <label>Python Skill (1-5):</label><br>
+        <input type="number" name="Python" min="1" max="5" required>
+        <br><br>
+
+        <label>SQL Skill (1-5):</label><br>
+        <input type="number" name="SQL" min="1" max="5" required>
+        <br><br>
+
+        <label>Communication Skill (1-5):</label><br>
+        <input type="number" name="Communication" min="1" max="5" required>
+        <br><br>
+
+        <label>Problem Solving Skill (1-5):</label><br>
+        <input type="number" name="Problem_Solving" min="1" max="5" required>
+        <br><br>
+
+        <label>Number of Projects:</label><br>
+        <input type="number" name="Projects" min="0" required>
+        <br><br>
+
+        <label>Number of Certifications:</label><br>
+        <input type="number" name="Certifications" min="0" required>
+        <br><br>
+
+        <button type="submit">Predict My Career</button>
+
+    </form>
+
+</body>
+</html>
+
+

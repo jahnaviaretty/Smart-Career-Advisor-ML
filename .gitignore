@@ -1,0 +1,26 @@
+# Python files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local database and personal records
+database/career_advisor.db
+
+# Backup folders
+gitignore_backup/
+requirements_backup/
+
+# Generated chart
+static/career_chart.png
+
+# Environment variables
+.env
+
+# VS Code and system files
+.vscode/
+.DS_Store
+Thumbs.db
