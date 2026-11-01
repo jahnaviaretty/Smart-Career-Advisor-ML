@@ -21,18 +21,23 @@ The application uses a Random Forest Classifier to generate the Top 3 career rec
 ## Application Screenshots
 
 ### Home Page
+
 ![Home Page](screenshots/home.png)
 
 ### Login Page
+
 ![Login Page](screenshots/login.png)
 
 ### Registration Page
+
 ![Registration Page](screenshots/register.png)
 
 ### Career Prediction Results
+
 ![Prediction Results](screenshots/prediction.png)
 
 ### Career Recommendation Chart
+
 ![Career Chart](screenshots/chart.png)
 
 ## Technologies Used
@@ -42,7 +47,7 @@ The application uses a Random Forest Classifier to generate the Top 3 career rec
 - **Machine Learning:** Scikit-learn, Random Forest, Pandas, NumPy, Joblib
 - **Visualization:** Matplotlib
 - **Database:** SQLite
-- **Tools:** VS Code, Git, GitHub
+- **Development Tools:** VS Code, Git, GitHub
 
 ## Career Categories
 
@@ -90,41 +95,29 @@ Smart-Career-Advisor-ML/
 
 ## Installation and Setup
 
-### 1. Clone the Repository
+1. Clone the repository:
 
-```bash
-git clone https://github.com/jahnaviaretty/Smart-Career-Advisor-ML.git
-```
+   `git clone https://github.com/jahnaviaretty/Smart-Career-Advisor-ML.git`
 
-### 2. Navigate to the Project Folder
+2. Navigate to the project folder:
 
-```bash
-cd Smart-Career-Advisor-ML
-```
+   `cd Smart-Career-Advisor-ML`
 
-### 3. Install Required Packages
+3. Install the required packages:
 
-```bash
-python -m pip install -r requirements.txt
-```
+   `python -m pip install -r requirements.txt`
 
-### 4. Create the Database
+4. Create the database:
 
-```bash
-python database/db_setup.py
-```
+   `python database/db_setup.py`
 
-### 5. Run the Application
+5. Run the application:
 
-```bash
-python database/app.py
-```
+   `python database/app.py`
 
-### 6. Open in Browser
+6. Open your browser and visit:
 
-Visit:
-
-http://127.0.0.1:5000
+   `http://127.0.0.1:5000`
 
 Register an account, log in, and explore your career recommendations.
 
@@ -158,4 +151,4 @@ This is an academic demonstration project. The current model is trained on a sma
 
 B.Tech – Computer Science and Engineering (Data Science)
 
-GitHub: [jahnaviaretty](https://github.com/jahnaviaretty)
+GitHub: [jahnu08](https://github.com/jahnu08)
