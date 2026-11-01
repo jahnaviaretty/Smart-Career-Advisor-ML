@@ -1,4 +1,3 @@
-
 # Smart Career Advisor Using Machine Learning
 
 ## Project Overview
@@ -19,37 +18,33 @@ The application uses a Random Forest Classifier to generate the Top 3 career rec
 - SQLite Database Integration
 - Responsive Web Interface
 
+## Application Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Registration Page
+![Registration Page](screenshots/register.png)
+
+### Career Prediction Results
+![Prediction Results](screenshots/prediction.png)
+
+### Career Recommendation Chart
+![Career Chart](screenshots/chart.png)
+
 ## Technologies Used
 
-### Frontend
-- HTML
-- CSS
-
-### Backend
-- Python
-- Flask
-
-### Machine Learning
-- Scikit-learn
-- Random Forest Classifier
-- Pandas
-- NumPy
-- Joblib
-
-### Data Visualization
-- Matplotlib
-
-### Database
-- SQLite
-
-### Development Tools
-- Visual Studio Code
-- Git
-- GitHub
+- **Frontend:** HTML, CSS
+- **Backend:** Python, Flask
+- **Machine Learning:** Scikit-learn, Random Forest, Pandas, NumPy, Joblib
+- **Visualization:** Matplotlib
+- **Database:** SQLite
+- **Tools:** VS Code, Git, GitHub
 
 ## Career Categories
-
-The application provides recommendations across five career categories:
 
 1. Data Science
 2. Artificial Intelligence and Machine Learning
@@ -65,7 +60,6 @@ Smart-Career-Advisor-ML/
 ├── database/
 │   ├── app.py
 │   ├── db_setup.py
-│   ├── train_model_script.py
 │   ├── career_dataset.csv
 │   └── career_advisor.db
 │
@@ -83,6 +77,13 @@ Smart-Career-Advisor-ML/
 │   ├── register.html
 │   └── dashboard.html
 │
+├── screenshots/
+│   ├── home.png
+│   ├── login.png
+│   ├── register.png
+│   ├── prediction.png
+│   └── chart.png
+│
 ├── requirements.txt
 └── README.md
 ```
@@ -92,7 +93,7 @@ Smart-Career-Advisor-ML/
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/jahnaviaretty/Smart-Career-Advisor-ML.git
 ```
 
 ### 2. Navigate to the Project Folder
@@ -121,11 +122,11 @@ python database/app.py
 
 ### 6. Open in Browser
 
-```text
-http://127.0.0.1:5000
-```
+Visit:
 
-Register an account, log in, and start exploring career recommendations.
+http://127.0.0.1:5000
+
+Register an account, log in, and explore your career recommendations.
 
 ## Machine Learning Workflow
 
@@ -140,16 +141,16 @@ Register an account, log in, and start exploring career recommendations.
 
 ## Future Enhancements
 
-- Improve the training dataset with more diverse and representative records.
+- Improve the training dataset with more diverse records.
 - Add more career categories.
 - Improve model evaluation and recommendation quality.
 - Add an administrator dashboard.
 - Deploy the application online.
-- Improve user experience and interface design.
+- Improve the user interface.
 
 ## Important Note
 
-This is an academic demonstration project. The current model is trained on a small sample dataset. Its recommendation scores are model outputs and should not be interpreted as validated probabilities of career suitability.
+This is an academic demonstration project. The current model is trained on a small sample dataset. Its recommendation scores should not be interpreted as validated probabilities of career suitability.
 
 ## Author
 
@@ -157,4 +158,4 @@ This is an academic demonstration project. The current model is trained on a sma
 
 B.Tech – Computer Science and Engineering (Data Science)
 
-GitHub: https://github.com/jahnu08
+GitHub: [jahnaviaretty](https://github.com/jahnaviaretty)
